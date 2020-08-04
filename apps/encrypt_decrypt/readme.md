@@ -49,12 +49,13 @@ The application is built by using the standard MPLAB X IDE buttons.
 
 # Configuring the Hardware
 Refer to the following pages to configure the hardware:
-* [SAM E70 Xplained Ultra](https://github.com/Microchip-MPLAB-Harmony/crypto/wiki/Configuring-the-SAM-E70-Xplained-Ultra-Board)
-* [SAM E54 Xplained Pro](https://github.com/Microchip-MPLAB-Harmony/crypto/wiki/Configuring-the-SAM-E54-Xplained-Pro-Board)
-* [SAM A5D2 Xplained Ultra](https://github.com/Microchip-MPLAB-Harmony/crypto/wiki/Configuring-the-SAM-A5D2-Xplained-Ultra-Board)
-* [PIC32MZ EF Starter Kit](https://github.com/Microchip-MPLAB-Harmony/crypto/wiki/Configuring-the-PIC32MZ-EF-Starter-Kit)
-* [SAM L21 Xplained Pro](https://github.com/Microchip-MPLAB-Harmony/crypto/wiki/Configuring-the-SAM-L21-Xplained-Pro-Board)
-* [SAM 9x60 EK](https://github.com/Microchip-MPLAB-Harmony/crypto/wiki/Configuring-the-SAM-9X60-EK-Board)
+* [SAM E70 Xplained Ultra](../docs/Configuring-the-SAM-E70-Xplained-Ultra-Board.md)
+* [SAM E54 Xplained Pro](../docs/Configuring-the-SAM-E54-Xplained-Pro-Board)
+* [SAM A5D2 Xplained Ultra](../docs/Configuring-the-SAM-A5D2-Xplained-Ultra-Board)
+* [PIC32MZ EF Starter Kit](../docs/Configuring-the-PIC32MZ-EF-Starter-Kit)
+* [SAM L21 Xplained Pro](../docs/Configuring-the-SAM-L21-Xplained-Pro-Board)
+* [SAM 9x60 EK](../docs/Configuring-the-SAM-9X60-EK-Board)
+* [SAM L11 Xplained pro](../docs/Configuring-the-SAM-L11-Xplained-Pro-Board.md)
 
 
 
