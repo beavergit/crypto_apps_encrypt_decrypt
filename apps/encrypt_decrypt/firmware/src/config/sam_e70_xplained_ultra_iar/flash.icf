@@ -1,7 +1,7 @@
 /**
  * \file
  *
- * \brief IAR linker script (flash) for ATSAME70x21
+ * \brief IAR linker script (flash) for ATSAME70Q21B
  *
  * Copyright (c) 2019 Microchip Technology Inc.
  *
@@ -31,7 +31,7 @@
 /*-Editor annotation file-*/
 /* IcfEditorFile="$TOOLKIT_DIR$\config\ide\IcfEditor\cortex_v1_0.xml" */
 /*-Specials-*/
-define symbol __ICFEDIT_intvec_start__ = 0x00400000;
+define symbol __ICFEDIT_intvec_start__     = 0x00400000;
 /*-Memory Regions-*/
 define symbol __ICFEDIT_region_RAM_start__ = 0x20400000;
 define symbol __ICFEDIT_region_RAM_end__   = 0x2045FFFF;
@@ -39,10 +39,10 @@ define symbol __ICFEDIT_region_ROM_start__ = 0x00400000;
 define symbol __ICFEDIT_region_ROM_end__   = 0x005FFFFF;
 /*-Sizes-*/
 if (!isdefinedsymbol(__ICFEDIT_size_cstack__)) {
-define symbol __ICFEDIT_size_cstack__ = 0x10000;
+  define symbol __ICFEDIT_size_cstack__    = 65536;
 }
 if (!isdefinedsymbol(__ICFEDIT_size_heap__)) {
-define symbol __ICFEDIT_size_heap__ = 0x10000;
+  define symbol __ICFEDIT_size_heap__      = 65536;
 }
 /**** End of ICF editor section. ###ICF###*/
 
@@ -53,7 +53,7 @@ define region ROM_region    = mem:[from __ICFEDIT_region_ROM_start__ to __ICFEDI
 define block CSTACK with alignment = 8, size = __ICFEDIT_size_cstack__ { };
 define block HEAP   with alignment = 8, size = __ICFEDIT_size_heap__   { };
 
-initialize by copy { readwrite };
+initialize by copy  { readwrite };
 
 
 place at address mem:__ICFEDIT_intvec_start__ { readonly section .intvec };

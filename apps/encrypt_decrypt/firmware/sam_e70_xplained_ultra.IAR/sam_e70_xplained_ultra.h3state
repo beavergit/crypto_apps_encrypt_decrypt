@@ -1,0 +1,28 @@
+{
+    "linker": {
+        "script": "..\\src\\config\\sam_e70_xplained_ultra_iar\\flash.icf"
+    }, 
+    "assembler": {
+        "macros": [], 
+        "includes": []
+    }, 
+    "general": {
+        "name": "sam_e70_xplained_ultra_iar", 
+        "device": "ATSAME70Q21B"
+    }, 
+    "compiler": {
+        "macros": [
+            "HAVE_CONFIG_H", 
+            "WOLFSSL_IGNORE_FILE_WARN"
+        ], 
+        "includes": [
+            "..\\src", 
+            "..\\src\\config\\sam_e70_xplained_ultra_iar", 
+            "..\\src\\packs\\ATSAME70Q21B_DFP", 
+            "..\\src\\packs\\CMSIS\\CMSIS\\Core\\Include", 
+            "..\\src\\packs\\CMSIS", 
+            "..\\src\\third_party\\wolfssl", 
+            "..\\src\\third_party\\wolfssl\\wolfssl"
+        ]
+    }
+}
