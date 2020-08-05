@@ -180,8 +180,6 @@ int CRYPT_SHA256_DataSizeSet(CRYPT_SHA256_CTX* sha256, unsigned int sz)
         return BAD_FUNC_ARG;
 
 #ifdef WOLFSSL_PIC32MZ_HASH
-    void wc_Sha256SizeSet(Sha256* sha256, word32 len);
-
     wc_Sha256SizeSet((Sha256*)sha256, sz);
 #endif
 
@@ -405,7 +403,6 @@ int CRYPT_RNG_Initialize(CRYPT_RNG_CTX* rng)
 #ifdef WOLFSSL_MICROCHIP_SAME70
 	return same70_InitRng();
 #else
-    return wc_InitRng((WC_RNG*)rng);
     return wc_InitRng((WC_RNG*)rng);
 #endif
 }
