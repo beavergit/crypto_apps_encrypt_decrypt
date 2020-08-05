@@ -66,6 +66,44 @@
 #pragma config WDT_EWOFFSET = 0xB
 #pragma config WDT_WEN = CLEAR
 #pragma config BOD33_HYST = CLEAR
+#pragma config IDAU_AS = 0xff
+#pragma config IDAU_ANSC = 0x0
+#pragma config IDAU_DS = 0x8
+#pragma config IDAU_RS = 0x7f
+#pragma config NVMCTRL_URWEN = SET
+#pragma config NONSECA_PAC = CLEAR
+#pragma config NONSECA_PM = CLEAR
+#pragma config NONSECA_MCLK = CLEAR
+#pragma config NONSECA_RSTC = CLEAR
+#pragma config NONSECA_OSCCTRL = CLEAR
+#pragma config NONSECA_OSC32KCTRL = CLEAR
+#pragma config NONSECA_SUPC = CLEAR
+#pragma config NONSECA_GCLK = CLEAR
+#pragma config NONSECA_WDT = CLEAR
+#pragma config NONSECA_RTC = CLEAR
+#pragma config NONSECA_EIC = CLEAR
+#pragma config NONSECA_FREQM = CLEAR
+#pragma config NONSECA_PORT = CLEAR
+#pragma config NONSECA_AC = CLEAR
+#pragma config NONSECB_IDAU = CLEAR
+#pragma config NONSECB_DSU = CLEAR
+#pragma config NONSECB_NVMCTRL = CLEAR
+#pragma config NONSECB_DMAC = CLEAR
+#pragma config NONSECC_EVSYS = CLEAR
+#pragma config NONSECC_SERCOM0 = CLEAR
+#pragma config NONSECC_SERCOM1 = CLEAR
+#pragma config NONSECC_SERCOM2 = CLEAR
+#pragma config NONSECC_TC0 = CLEAR
+#pragma config NONSECC_TC1 = CLEAR
+#pragma config NONSECC_TC2 = CLEAR
+#pragma config NONSECC_ADC = CLEAR
+#pragma config NONSECC_DAC = CLEAR
+#pragma config NONSECC_PTC = CLEAR
+#pragma config NONSECC_TRNG = CLEAR
+#pragma config NONSECC_CCL = CLEAR
+#pragma config NONSECC_OPAMP = CLEAR
+#pragma config NONSECC_TRAM = CLEAR
+#pragma config BOOTROM_USERCRC = 0x8433651e
 
 
 
@@ -169,6 +207,14 @@ const SYS_TIME_INIT sysTimeInitData =
 };
 
 // </editor-fold>
+
+
+
+// *****************************************************************************
+// *****************************************************************************
+// Section: Local initialization functions
+// *****************************************************************************
+// *****************************************************************************
 
 
 
