@@ -1899,48 +1899,6 @@ void des3_test(void)
 
 #ifndef NO_RSA
 
-#if !defined(USE_CERT_BUFFERS_1024) && !defined(USE_CERT_BUFFERS_2048)
-    #ifdef FREESCALE_MQX
-        static const char* clientKey  = "a:\\certs\\client-key.der";
-        static const char* clientCert = "a:\\certs\\client-cert.der";
-        #ifdef WOLFSSL_CERT_GEN
-            static const char* caKeyFile  = "a:\\certs\\ca-key.der";
-            static const char* caCertFile = "a:\\certs\\ca-cert.pem";
-            #ifdef HAVE_ECC
-                static const char* eccCaKeyFile  = "a:\\certs\\ecc-key.der";
-                static const char* eccCaCertFile = "a:\\certs\\server-ecc.pem";
-            #endif
-        #endif
-    #elif defined(WOLFSSL_MKD_SHELL)
-        static char* clientKey = "certs/client-key.der";
-        static char* clientCert = "certs/client-cert.der";
-        void set_clientKey(char *key) {  clientKey = key ; }
-        void set_clientCert(char *cert) {  clientCert = cert ; }
-        #ifdef WOLFSSL_CERT_GEN
-            static char* caKeyFile  = "certs/ca-key.der";
-            static char* caCertFile = "certs/ca-cert.pem";
-            void set_caKeyFile (char * key)  { caKeyFile   = key ; }
-            void set_caCertFile(char * cert) { caCertFile = cert ; }
-            #ifdef HAVE_ECC
-                static const char* eccCaKeyFile  = "certs/ecc-key.der";
-                static const char* eccCaCertFile = "certs/server-ecc.pem";
-                void set_eccCaKeyFile (char * key)  { eccCaKeyFile  = key ; }
-                void set_eccCaCertFile(char * cert) { eccCaCertFile = cert ; }
-            #endif
-        #endif
-    #else
-        static const char* clientKey  = "./certs/client-key.der";
-        static const char* clientCert = "./certs/client-cert.der";
-        #ifdef WOLFSSL_CERT_GEN
-            static const char* caKeyFile  = "./certs/ca-key.der";
-            static const char* caCertFile = "./certs/ca-cert.pem";
-            #ifdef HAVE_ECC
-                static const char* eccCaKeyFile  = "./certs/ecc-key.der";
-                static const char* eccCaCertFile = "./certs/server-ecc.pem";
-            #endif
-        #endif
-    #endif
-#endif
 
 void rsa_test(void)
 {
@@ -1956,9 +1914,7 @@ void rsa_test(void)
     word32 inLen = (word32)strlen((char*)in);
     uint8_t   out[256];
     uint8_t   plain[256];
-#if !defined(USE_CERT_BUFFERS_1024) && !defined(USE_CERT_BUFFERS_2048)
-    FILE*  file, * file2;
-#endif
+
 #ifdef WOLFSSL_TEST_CERT
     DecodedCert cert;
 #endif
@@ -1975,17 +1931,9 @@ void rsa_test(void)
 #ifdef USE_CERT_BUFFERS_1024
     XMEMCPY(tmp, client_key_der_1024, sizeof_client_key_der_1024);
     uint8_ts = sizeof_client_key_der_1024;
-#elif defined(USE_CERT_BUFFERS_2048)
+#else
     XMEMCPY(tmp, client_key_der_2048, sizeof_client_key_der_2048);
     uint8_ts = sizeof_client_key_der_2048;
-#else
-    appData.rsa_test_result++;
-    file = fopen(clientKey, "rb");
-    if (file)
-        appData.rsa_test_result--;
-    
-    uint8_ts = fread(tmp, 1, FOURK_BUF, file);
-    fclose(file);
 #endif /* USE_CERT_BUFFERS */
 
 #ifdef HAVE_CAVIUM
@@ -2022,17 +1970,9 @@ void rsa_test(void)
 #ifdef USE_CERT_BUFFERS_1024
     XMEMCPY(tmp, client_cert_der_1024, sizeof_client_cert_der_1024);
     uint8_ts = sizeof_client_cert_der_1024;
-#elif defined(USE_CERT_BUFFERS_2048)
+#else
     XMEMCPY(tmp, client_cert_der_2048, sizeof_client_cert_der_2048);
     uint8_ts = sizeof_client_cert_der_2048;
-#else
-    appData.rsa_test_result++;
-    file2 = fopen(clientCert, "rb");
-    if (file2)
-        appData.rsa_test_result--;
-
-    uint8_ts = fread(tmp, 1, FOURK_BUF, file2);
-    fclose(file2);
 #endif
 
 #ifdef sizeof

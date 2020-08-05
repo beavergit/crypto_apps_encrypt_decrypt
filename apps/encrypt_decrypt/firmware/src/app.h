@@ -34,7 +34,7 @@
 #include <string.h>
 #include "configuration.h"
 #include "definitions.h"
-#include "../../../../crypto.h"
+#include "crypto/crypto.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
