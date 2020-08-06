@@ -3057,7 +3057,7 @@ void APP_Tasks(void) {
 #ifdef HAVE_ECC
             sprintf(printBuffer, "%s\n\rECC test:          %s", 
                     printBuffer, (appData.ecc_test_result==expectedResult?"Pass":"FAIL"));
-            sprintf(printBuffer, "%s\t %10"PRIu64" clock cycles", printBuffer, appData.ecc_timing);
+            sprintf(printBuffer, "%s\t %10d clock cycles", printBuffer, (int) appData.ecc_timing);
 #endif
 #ifndef NO_RNG_TEST
             sprintf(printBuffer, "%s\n\rRANDOM test:       %s", 
@@ -3101,7 +3101,7 @@ void APP_Tasks(void) {
 #ifndef NO_RSA
             sprintf(printBuffer, "%s\n\rRSA test:          %s", 
                     printBuffer, (appData.rsa_test_result==expectedResult?"Pass":"FAIL"));
-            sprintf(printBuffer, "%s\t %10"PRIu64" clock cycles", printBuffer, appData.rsa_timing);
+            sprintf(printBuffer, "%s\t %10d clock cycles", printBuffer, (int) appData.rsa_timing);
 #endif
 #if defined(WOLFSSL_HAVE_MCHP_BA414E_CRYPTO) && defined(ECC_PRIM_TEST)
             sprintf(printBuffer, "%s\n\rPrimative test:    %s", 
