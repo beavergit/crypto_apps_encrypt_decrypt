@@ -147,7 +147,8 @@ extern "C" {
 #define HAVE_ECC
 #define NO_DH
 #define NO_DSA
-#define USE_CERT_BUFFERS_2048
+#define FP_MAX_BITS 4096
+#define USE_CERT_BUFFERS_4096
 #define NO_DEV_RANDOM
 #define WOLFSSL_PIC32MZ_RNG
 #define HAVE_HASHDRBG
