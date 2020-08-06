@@ -160,6 +160,7 @@ extern "C" {
 #define NO_DH
 #define NO_DSA
 #define WOLFSSL_HAVE_MCHP_HW_RSA
+#define FP_MAX_BITS 4096
 #define USE_CERT_BUFFERS_2048
 #define NO_DEV_RANDOM
 #define HAVE_HASHDRBG
