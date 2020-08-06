@@ -48,6 +48,9 @@
             <logicalFolder name="f4" displayName="cache" projectFiles="true">
               <itemPath>../src/config/sam_rh71_ek/system/cache/sys_cache.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f6" displayName="debug" projectFiles="true">
+              <itemPath>../src/config/sam_rh71_ek/system/debug/sys_debug.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f5" displayName="dma" projectFiles="true">
               <itemPath>../src/config/sam_rh71_ek/system/dma/sys_dma.h</itemPath>
               <itemPath>../src/config/sam_rh71_ek/system/dma/sys_dma_mapping.h</itemPath>
@@ -83,43 +86,43 @@
         <itemPath>../src/config/sam_rh71_ek/osal/osal_impl_basic.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="packs" projectFiles="true">
-        <logicalFolder name="f1" displayName="ATSAMRH71F20B_DFP" projectFiles="true">
+        <logicalFolder name="f1" displayName="ATSAMRH71F20C_DFP" projectFiles="true">
           <logicalFolder name="f1" displayName="component" projectFiles="true">
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/chipid.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/flexcom.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/flexramecc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/gmac.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/hefc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/hemc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/hsdramc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/hsmc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/icm.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/ip1553.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/matrix.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/mcan.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/nmic.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/pio.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/pmc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/pwm.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/qspi.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/rstc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/rtc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/rtt.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/sfr.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/sha.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/spw.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/supc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/tc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/tcmecc.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/trng.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/wdt.h</itemPath>
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/component/xdmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/chipid.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/flexcom.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/flexramecc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/gmac.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/hefc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/hemc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/hsdramc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/hsmc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/icm.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/ip1553.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/matrix.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/mcan.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/nmic.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/pio.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/pmc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/pwm.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/qspi.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/rstc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/rtt.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/sfr.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/sha.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/spw.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/supc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/tc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/tcmecc.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/trng.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/component/xdmac.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
-            <itemPath>../src/packs/ATSAMRH71F20B_DFP/pio/samrh71f20b.h</itemPath>
+            <itemPath>../src/packs/ATSAMRH71F20C_DFP/pio/samrh71f20c.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/ATSAMRH71F20B_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAMRH71F20B_DFP/atsamrh71f20b.h</itemPath>
+          <itemPath>../src/packs/ATSAMRH71F20C_DFP/device.h</itemPath>
+          <itemPath>../src/packs/ATSAMRH71F20C_DFP/atsamrh71f20c.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
@@ -218,14 +221,18 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/cpuid.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/cryptocb.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/curve25519.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/curve448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/des3.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/dh.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/dsa.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ecc.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ed25519.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ed448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/error-crypt.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/fe_448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/fe_operations.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/fips_test.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ge_448.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/ge_operations.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/hash.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/hc128.h</itemPath>
@@ -391,14 +398,18 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/cpuid.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/cryptocb.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/curve25519.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/curve448.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/dh.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/dsa.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ecc.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ecc_fp.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ed25519.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ed448.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/error.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/fe_448.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/fe_low_mem.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/fe_operations.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_448.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_low_mem.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/ge_operations.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/hash.c</itemPath>
@@ -426,10 +437,12 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_c32.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_c64.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_cortexm.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_dsp32.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_int.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sp_x86_64.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/srp.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/tfm.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/wc_dsp.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/wc_encrypt.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/wc_pkcs11.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/wc_port.c</itemPath>
@@ -466,6 +479,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
+      <itemPath>../src/config/sam_rh71_ek/harmony.prj</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -485,11 +499,9 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMRH71_DFP" vendor="Microchip" version="2.0.89"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
+        <pack name="SAMRH71_DFP" vendor="Microchip" version="2.0.89"/>
       </packs>
-      <ScriptingSettings>
-      </ScriptingSettings>
       <compileType>
         <linkerTool>
           <linkerLibItems>
@@ -558,7 +570,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_rh71_ek;../src/packs/ATSAMRH71F20B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/arm;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib"/>
+                  value="../src;../src/config/sam_rh71_ek;../src/packs/ATSAMRH71F20C_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -679,7 +691,6 @@
         <property key="mdtcm" value="0x40000"/>
         <property key="mitcm" value="0x20000"/>
         <property key="mstacktcm" value="false"/>
-        <property key="omit-pack-options" value="1"/>
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
         <property key="wpo-lto" value="false"/>
@@ -1187,7 +1198,6 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.end" value="0x1001ffff"/>
         <property key="memories.programmemory.start" value="0x10000000"/>
-        <property key="programoptions.eraseb4program" value="false"/>
         <property key="programoptions.preservebootflash" value="false"/>
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveprogramrange.end" value="0x1001ffff"/>
