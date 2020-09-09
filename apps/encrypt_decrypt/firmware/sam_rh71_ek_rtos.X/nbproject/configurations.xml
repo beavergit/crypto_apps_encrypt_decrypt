@@ -20,6 +20,11 @@
             <itemPath>../src/config/sam_rh71_ek_rtos/driver/driver.h</itemPath>
             <itemPath>../src/config/sam_rh71_ek_rtos/driver/driver_common.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal.h</itemPath>
+            <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal_freertos.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f1" displayName="clk" projectFiles="true">
               <itemPath>../src/config/sam_rh71_ek_rtos/peripheral/clk/plib_clk.h</itemPath>
@@ -72,6 +77,7 @@
           <itemPath>../src/config/sam_rh71_ek_rtos/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/sam_rh71_ek_rtos/definitions.h</itemPath>
           <itemPath>../src/config/sam_rh71_ek_rtos/config.h</itemPath>
+          <itemPath>../src/config/sam_rh71_ek_rtos/device.h</itemPath>
           <itemPath>../src/config/sam_rh71_ek_rtos/FreeRTOSConfig.h</itemPath>
           <itemPath>../src/config/sam_rh71_ek_rtos/user.h</itemPath>
           <itemPath>../src/config/sam_rh71_ek_rtos/configuration.h</itemPath>
@@ -107,11 +113,6 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f6" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal.h</itemPath>
-        <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal_definitions.h</itemPath>
-        <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal_freertos.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f4" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAMRH71F20C_DFP" projectFiles="true">
@@ -149,7 +150,6 @@
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMRH71F20C_DFP/pio/samrh71f20c.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/ATSAMRH71F20C_DFP/device.h</itemPath>
           <itemPath>../src/packs/ATSAMRH71F20C_DFP/atsamrh71f20c.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
@@ -165,6 +165,7 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm7.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -324,6 +325,11 @@
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="sam_rh71_ek_rtos" projectFiles="true">
+          <itemPath>../src/config/sam_rh71_ek_rtos/ATSAMRH71F20C.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -341,6 +347,9 @@
               <itemPath>../src/config/sam_rh71_ek_rtos/driver/usart/src/drv_usart.c</itemPath>
               <itemPath>../src/config/sam_rh71_ek_rtos/driver/usart/src/drv_usart_local.h</itemPath>
             </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f7" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal_freertos.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f1" displayName="clk" projectFiles="true">
@@ -412,9 +421,6 @@
           <itemPath>../src/third_party/rtos/FreeRTOS/Source/event_groups.c</itemPath>
           <itemPath>../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c</itemPath>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f5" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/sam_rh71_ek_rtos/osal/osal_freertos.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfcrypt" projectFiles="true">
         <logicalFolder name="f1" displayName="port" projectFiles="true">
@@ -532,9 +538,12 @@
                    projectFiles="false">
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/evp.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_rh71_ek_rtos/harmony.prj</itemPath>
+      <itemPath>../src/config/sam_rh71_ek_rtos/sam_rh71_ek_rtos.xml</itemPath>
+      <itemPath>../src/config/sam_rh71_ek_rtos/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -625,7 +634,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_rh71_ek_rtos;../src/packs/ATSAMRH71F20C_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7"/>
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/GCC/SAM/CM7;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/zlib;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl;../src;../src/config/sam_rh71_ek_rtos;../src/packs/ATSAMRH71F20C_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -635,7 +644,7 @@
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros"
-                  value="HAVE_CONFIG_H;WOLFSSL_IGNORE_FILE_WARN"/>
+                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="toplevel-reordering" value=""/>
@@ -690,7 +699,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="131072"/>
+        <property key="heap-size" value="161072"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -721,7 +730,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/sam_rh71_ek_rtos;../src/packs/ATSAMRH71F20C_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
