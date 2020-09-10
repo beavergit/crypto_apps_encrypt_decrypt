@@ -72,7 +72,7 @@ void _DRV_BA414E_Tasks(  void *pvParameters  )
 TaskHandle_t xAPP_Tasks;
 
 void _APP_Tasks(  void *pvParameters  )
-{
+{   
     while(1)
     {
         APP_Tasks();
