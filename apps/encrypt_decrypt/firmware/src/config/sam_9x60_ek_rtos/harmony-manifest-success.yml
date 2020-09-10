@@ -4,25 +4,20 @@
 
 
 project: encrypt_decrypt
-creation_date: 2020-08-05T12:17:34.211-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2020-09-08T17:53:10.523299100-07:00[America/Phoenix]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: Standalone            # [IDE|Standalone|Headless]
 mplabx_version: NA        # if MPLAB X plugin only
 plugin_version: NA        # if MPLAB X plugin only
+compiler: iar
 
 modules:
-    - {name: "bootloader_apps_uart", version: "v3.0.0"}
-    - {name: "bsp", version: "v3.7.0"}
+    - {name: "csp", version: "v3.8.0"}
+    - {name: "core", version: "v3.8.0"}
+    - {name: "dev_packs", version: "v3.8.0"}
+    - {name: "mhc", version: "v3.5.1"}
+    - {name: "wolfssl", version: "v4.5.0-stable"}
+    - {name: "bsp", version: "v3.8.0"}
+    - {name: "crypto", version: "v3.6.0-rc.2"}
     - {name: "CMSIS-FreeRTOS", version: "v10.3.0"}
-    - {name: "core", version: "v3.7.2"}
-    - {name: "crypto", version: "unknown"}
-    - {name: "crypto_apps_encrypt_decrypt", version: "unknown"}
-    - {name: "crypto_apps_large_hash", version: "unknown"}
-    - {name: "crypto_apps_speed_test", version: "unknown"}
-    - {name: "csp", version: "v3.7.1"}
-    - {name: "dev_packs", version: "v3.7.0"}
-    - {name: "mhc", version: "v3.4.1"}
-    - {name: "mplabx_plugin", version: "v3.5.0"}
-    - {name: "wolfssl", version: "v4.4.0"}
-    - {name: "zlib", version: "v1.2.11"}
 

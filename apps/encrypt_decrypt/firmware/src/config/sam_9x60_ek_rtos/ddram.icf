@@ -6,11 +6,11 @@ define region DDRAM_region         = mem:[from 0x21000000 to 0x2FFFFFFF];
 
 define block HEAP      with alignment = 4, size = 1024000{};
 define block CSTACK    with alignment = 8, size = 1024000{};
-define block FIQ_STACK with alignment = 8, size = 96{};
-define block IRQ_STACK with alignment = 8, size = 96{};
+define block FIQ_STACK with alignment = 8, size = 1024000{};
+define block IRQ_STACK with alignment = 8, size = 1024000{};
 define block SVC_STACK with alignment = 8, size = 1024000{};
-define block ABT_STACK with alignment = 8, size = 64{};
-define block UND_STACK with alignment = 8, size = 64{};
+define block ABT_STACK with alignment = 8, size = 1024000{};
+define block UND_STACK with alignment = 8, size = 1024000{};
 
 define block SRAM { section .region_sram  };
 define block DDRAM { section .region_ddr };

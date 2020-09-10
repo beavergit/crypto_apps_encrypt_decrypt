@@ -16,7 +16,6 @@
     }, 
     "compiler": {
         "macros": [
-            "__FPU_PRESENT=1", 
             "HAVE_CONFIG_H", 
             "WOLFSSL_IGNORE_FILE_WARN"
         ], 

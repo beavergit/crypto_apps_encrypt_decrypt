@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <project>
     <fileVersion>3</fileVersion>
     <configuration>
@@ -190,11 +190,11 @@
                 </option>
                 <option>
                     <name>GenLocaleTags</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>GenLocaleDisplayOnly</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>DSPExtension</name>
@@ -222,7 +222,7 @@
                     <name>CCDefines</name>
                     <state>HAVE_CONFIG_H</state>
                     <state>WOLFSSL_IGNORE_FILE_WARN</state>
-                    </option>
+                </option>
                 <option>
                     <name>CCPreprocFile</name>
                     <state>0</state>
@@ -261,19 +261,19 @@
                 </option>
                 <option>
                     <name>CCDiagSuppress</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCDiagRemark</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCDiagWarning</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCDiagError</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCObjPrefix</name>
@@ -302,7 +302,7 @@
                 </option>
                 <option>
                     <name>IExtraOptions</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCLangConformance</name>
@@ -338,7 +338,7 @@
                 </option>
                 <option>
                     <name>PreInclude</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CompilerMisraOverride</name>
@@ -356,7 +356,7 @@
                     <state>$PROJ_DIR$\..\src\third_party\rtos\FreeRTOS\Source\portable\IAR\SAM\ARM926</state>
                     <state>$PROJ_DIR$\..\src\third_party\rtos\FreeRTOS\Source\include</state>
                     <state>$PROJ_DIR$\.</state>
-                    </option>
+                </option>
                 <option>
                     <name>CCStdIncCheck</name>
                     <state>0</state>
@@ -513,15 +513,15 @@
                 </option>
                 <option>
                     <name>AWarnOne</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>AWarnRange1</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>AWarnRange2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>ADebug</name>
@@ -533,7 +533,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
-                    </option>
+                </option>
                 <option>
                     <name>AList</name>
                     <state>0</state>
@@ -608,7 +608,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -624,14 +624,14 @@
                 </option>
                 <option>
                     <name>AUserIncludes</name>
-                    </option>
+                </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
                     <state>0</state>
                 </option>
                 <option>
                     <name>AExtraOptionsV2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>AsmNoLiteralPool</name>
@@ -673,8 +673,8 @@
             <name>CUSTOM</name>
             <archiveVersion>3</archiveVersion>
             <data>
-                <extensions></extensions>
-                <cmdline></cmdline>
+                <extensions />
+                <cmdline />
                 <hasPrio>0</hasPrio>
             </data>
         </settings>
@@ -687,8 +687,8 @@
             <name>BUILDACTION</name>
             <archiveVersion>1</archiveVersion>
             <data>
-                <prebuild></prebuild>
-                <postbuild></postbuild>
+                <prebuild />
+                <postbuild />
             </data>
         </settings>
         <settings>
@@ -720,31 +720,31 @@
                 </option>
                 <option>
                     <name>IlinkKeepSymbols</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinaryFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySymbol</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySegment</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinaryAlign</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkDefines</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkConfigDefines</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkMapFile</name>
@@ -780,7 +780,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkEnableRemarks</name>
@@ -788,19 +788,19 @@
                 </option>
                 <option>
                     <name>IlinkSuppressDiags</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkTreatAsRem</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkTreatAsWarn</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkTreatAsErr</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkWarningsAreErrors</name>
@@ -812,7 +812,7 @@
                 </option>
                 <option>
                     <name>IlinkExtraOptions</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkLowLevelInterfaceSlave</name>
@@ -959,11 +959,11 @@
                 </option>
                 <option>
                     <name>IlinkStackControlFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkStackCallGraphFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CrcAlgorithm</name>
@@ -985,7 +985,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile_AltDefault</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkEncInput</name>
@@ -1017,19 +1017,19 @@
                 </option>
                 <option>
                     <name>IlinkRawBinaryFile2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySymbol2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySegment2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinaryAlign2</name>
-                    <state></state>
+                    <state />
                 </option>
             </data>
         </settings>
@@ -1042,7 +1042,7 @@
                 <debug>1</debug>
                 <option>
                     <name>IarchiveInputs</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IarchiveOverride</name>
@@ -1254,11 +1254,11 @@
                 </option>
                 <option>
                     <name>GenLocaleTags</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>GenLocaleDisplayOnly</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>DSPExtension</name>
@@ -1284,10 +1284,10 @@
                 <debug>0</debug>
                 <option>
                     <name>CCDefines</name>
-                    <state>NDEBUG</state>
                     <state>HAVE_CONFIG_H</state>
                     <state>WOLFSSL_IGNORE_FILE_WARN</state>
-                    </option>
+                    <state>NDEBUG</state>
+                </option>
                 <option>
                     <name>CCPreprocFile</name>
                     <state>0</state>
@@ -1326,19 +1326,19 @@
                 </option>
                 <option>
                     <name>CCDiagSuppress</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCDiagRemark</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCDiagWarning</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCDiagError</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCObjPrefix</name>
@@ -1367,7 +1367,7 @@
                 </option>
                 <option>
                     <name>IExtraOptions</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CCLangConformance</name>
@@ -1403,7 +1403,7 @@
                 </option>
                 <option>
                     <name>PreInclude</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CompilerMisraOverride</name>
@@ -1421,7 +1421,7 @@
                     <state>$PROJ_DIR$\..\src\third_party\rtos\FreeRTOS\Source\portable\IAR\SAM\ARM926</state>
                     <state>$PROJ_DIR$\..\src\third_party\rtos\FreeRTOS\Source\include</state>
                     <state>$PROJ_DIR$\.</state>
-                    </option>
+                </option>
                 <option>
                     <name>CCStdIncCheck</name>
                     <state>0</state>
@@ -1578,15 +1578,15 @@
                 </option>
                 <option>
                     <name>AWarnOne</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>AWarnRange1</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>AWarnRange2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>ADebug</name>
@@ -1598,7 +1598,7 @@
                 </option>
                 <option>
                     <name>ADefines</name>
-                    </option>
+                </option>
                 <option>
                     <name>AList</name>
                     <state>0</state>
@@ -1673,7 +1673,7 @@
                 </option>
                 <option>
                     <name>AOutputFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>ALimitErrorsCheck</name>
@@ -1689,14 +1689,14 @@
                 </option>
                 <option>
                     <name>AUserIncludes</name>
-                    </option>
+                </option>
                 <option>
                     <name>AExtraOptionsCheckV2</name>
                     <state>0</state>
                 </option>
                 <option>
                     <name>AExtraOptionsV2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>AsmNoLiteralPool</name>
@@ -1738,8 +1738,8 @@
             <name>CUSTOM</name>
             <archiveVersion>3</archiveVersion>
             <data>
-                <extensions></extensions>
-                <cmdline></cmdline>
+                <extensions />
+                <cmdline />
                 <hasPrio>0</hasPrio>
             </data>
         </settings>
@@ -1752,8 +1752,8 @@
             <name>BUILDACTION</name>
             <archiveVersion>1</archiveVersion>
             <data>
-                <prebuild></prebuild>
-                <postbuild></postbuild>
+                <prebuild />
+                <postbuild />
             </data>
         </settings>
         <settings>
@@ -1785,31 +1785,31 @@
                 </option>
                 <option>
                     <name>IlinkKeepSymbols</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinaryFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySymbol</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySegment</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinaryAlign</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkDefines</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkConfigDefines</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkMapFile</name>
@@ -1845,7 +1845,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkEnableRemarks</name>
@@ -1853,19 +1853,19 @@
                 </option>
                 <option>
                     <name>IlinkSuppressDiags</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkTreatAsRem</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkTreatAsWarn</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkTreatAsErr</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkWarningsAreErrors</name>
@@ -1877,7 +1877,7 @@
                 </option>
                 <option>
                     <name>IlinkExtraOptions</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkLowLevelInterfaceSlave</name>
@@ -1889,7 +1889,7 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
@@ -2024,11 +2024,11 @@
                 </option>
                 <option>
                     <name>IlinkStackControlFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkStackCallGraphFile</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>CrcAlgorithm</name>
@@ -2050,7 +2050,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile_AltDefault</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkEncInput</name>
@@ -2082,19 +2082,19 @@
                 </option>
                 <option>
                     <name>IlinkRawBinaryFile2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySymbol2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinarySegment2</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IlinkRawBinaryAlign2</name>
-                    <state></state>
+                    <state />
                 </option>
             </data>
         </settings>
@@ -2107,7 +2107,7 @@
                 <debug>0</debug>
                 <option>
                     <name>IarchiveInputs</name>
-                    <state></state>
+                    <state />
                 </option>
                 <option>
                     <name>IarchiveOverride</name>
@@ -2282,6 +2282,9 @@
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\config.h</name>
                     </file>
+                    <file>
+                        <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\device.h</name>
+                    </file>
                     <group>
                         <name>crypto</name>
                         <file>
@@ -2291,6 +2294,18 @@
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\FreeRTOSConfig.h</name>
                     </file>
+                    <group>
+                        <name>osal</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal_definitions.h</name>
+                        </file>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal_freertos.h</name>
+                        </file>
+                    </group>
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\user.h</name>
                     </file>
@@ -2705,9 +2720,6 @@
                 <name>packs</name>
                 <group>
                     <name>SAM9X60_DFP</name>
-                    <file>
-                        <name>$PROJ_DIR$\..\src\packs\SAM9X60_DFP\device.h</name>
-                    </file>
                     <group>
                         <name>component</name>
                         <file>
@@ -2930,15 +2942,6 @@
                 </group>
             </group>
             <file>
-                <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal_definitions.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal_freertos.h</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\..\src\app.h</name>
             </file>
         </group>
@@ -3065,6 +3068,12 @@
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\freertos_hooks.c</name>
                     </file>
+                    <group>
+                        <name>osal</name>
+                        <file>
+                            <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal_freertos.c</name>
+                        </file>
+                    </group>
                     <file>
                         <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\tasks.c</name>
                     </file>
@@ -3404,9 +3413,6 @@
                 </group>
             </group>
             <file>
-                <name>$PROJ_DIR$\..\src\config\sam_9x60_ek_rtos\osal\osal_freertos.c</name>
-            </file>
-            <file>
                 <name>$PROJ_DIR$\..\src\app.c</name>
             </file>
         </group>
@@ -3417,5 +3423,4 @@
             </file>
         </group>
     </group>
-    
-</project>
+    </project>

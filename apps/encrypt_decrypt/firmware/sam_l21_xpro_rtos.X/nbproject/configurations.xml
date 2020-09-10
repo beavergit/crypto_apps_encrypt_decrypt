@@ -6,7 +6,7 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_l21_xpro_rtos" projectFiles="true">
-          <logicalFolder name="f5" displayName="bsp" projectFiles="true">
+          <logicalFolder name="f6" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/sam_l21_xpro_rtos/bsp/bsp.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f4" displayName="crypto" projectFiles="true">
@@ -19,6 +19,11 @@
             </logicalFolder>
             <itemPath>../src/config/sam_l21_xpro_rtos/driver/driver.h</itemPath>
             <itemPath>../src/config/sam_l21_xpro_rtos/driver/driver_common.h</itemPath>
+          </logicalFolder>
+          <logicalFolder name="f5" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal.h</itemPath>
+            <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal_freertos.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f5" displayName="clock" projectFiles="true">
@@ -75,6 +80,7 @@
           <itemPath>../src/config/sam_l21_xpro_rtos/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/sam_l21_xpro_rtos/definitions.h</itemPath>
           <itemPath>../src/config/sam_l21_xpro_rtos/config.h</itemPath>
+          <itemPath>../src/config/sam_l21_xpro_rtos/device.h</itemPath>
           <itemPath>../src/config/sam_l21_xpro_rtos/FreeRTOSConfig.h</itemPath>
           <itemPath>../src/config/sam_l21_xpro_rtos/user.h</itemPath>
           <itemPath>../src/config/sam_l21_xpro_rtos/configuration.h</itemPath>
@@ -108,11 +114,6 @@
             </logicalFolder>
           </logicalFolder>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f5" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal.h</itemPath>
-        <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal_definitions.h</itemPath>
-        <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal_freertos.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="packs" projectFiles="true">
         <logicalFolder name="f1" displayName="ATSAML21J18B_DFP" projectFiles="true">
@@ -150,8 +151,6 @@
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAML21J18B_DFP/pio/saml21j18b.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/ATSAML21J18B_DFP/device.h</itemPath>
-          <itemPath>../src/packs/ATSAML21J18B_DFP/atsaml21j18b_compat.h</itemPath>
           <itemPath>../src/packs/ATSAML21J18B_DFP/atsaml21j18b.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
@@ -167,6 +166,7 @@
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cmsis_armclang_ltm.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/core_cm0plus.h</itemPath>
                 <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/mpu_armv7.h</itemPath>
+                <itemPath>../src/packs/CMSIS/CMSIS/Core/Include/cachel1_armv7.h</itemPath>
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
@@ -313,13 +313,18 @@
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1" displayName="sam_l21_xpro_rtos" projectFiles="true">
+          <itemPath>../src/config/sam_l21_xpro_rtos/ATSAML21J18B.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_l21_xpro_rtos" projectFiles="true">
-          <logicalFolder name="f6" displayName="bsp" projectFiles="true">
+          <logicalFolder name="f7" displayName="bsp" projectFiles="true">
             <itemPath>../src/config/sam_l21_xpro_rtos/bsp/bsp.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f5" displayName="crypto" projectFiles="true">
@@ -330,6 +335,9 @@
               <itemPath>../src/config/sam_l21_xpro_rtos/driver/usart/src/drv_usart.c</itemPath>
               <itemPath>../src/config/sam_l21_xpro_rtos/driver/usart/src/drv_usart_local.h</itemPath>
             </logicalFolder>
+          </logicalFolder>
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal_freertos.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f5" displayName="clock" projectFiles="true">
@@ -402,9 +410,6 @@
           <itemPath>../src/third_party/rtos/FreeRTOS/Source/event_groups.c</itemPath>
           <itemPath>../src/third_party/rtos/FreeRTOS/Source/stream_buffer.c</itemPath>
         </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f4" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/sam_l21_xpro_rtos/osal/osal_freertos.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfcrypt" projectFiles="true">
         <logicalFolder name="f1" displayName="port" projectFiles="true">
@@ -508,10 +513,12 @@
                    projectFiles="false">
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/evp.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_l21_xpro_rtos/harmony.prj</itemPath>
       <itemPath>../src/config/sam_l21_xpro_rtos/sam_l21_xpro_rtos.xml</itemPath>
+      <itemPath>../src/config/sam_l21_xpro_rtos/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -593,7 +600,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_l21_xpro_rtos;../src/packs/ATSAML21J18B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM0"/>
+                  value="../src/third_party/rtos/FreeRTOS/Source/portable/GCC/ARM_CM0;../src/third_party/rtos/FreeRTOS/Source/include;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl;../src;../src/config/sam_l21_xpro_rtos;../src/packs/ATSAML21J18B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -603,7 +610,7 @@
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros"
-                  value="HAVE_CONFIG_H;WOLFSSL_IGNORE_FILE_WARN"/>
+                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="toplevel-reordering" value=""/>
@@ -689,7 +696,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/sam_l21_xpro_rtos;../src/packs/ATSAML21J18B_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/;"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
