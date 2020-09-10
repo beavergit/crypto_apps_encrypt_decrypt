@@ -22,6 +22,11 @@
             <itemPath>../src/config/pic32mz_w1_curiosity_sw/driver/driver.h</itemPath>
             <itemPath>../src/config/pic32mz_w1_curiosity_sw/driver/driver_common.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f6" displayName="osal" projectFiles="true">
+            <itemPath>../src/config/pic32mz_w1_curiosity_sw/osal/osal.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1_curiosity_sw/osal/osal_definitions.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1_curiosity_sw/osal/osal_impl_basic.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f3" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1_curiosity_sw/peripheral/clk/plib_clk.h</itemPath>
@@ -64,20 +69,9 @@
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/config.h</itemPath>
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/definitions.h</itemPath>
+          <itemPath>../src/config/pic32mz_w1_curiosity_sw/device.h</itemPath>
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/user.h</itemPath>
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/configuration.h</itemPath>
-        </logicalFolder>
-      </logicalFolder>
-      <logicalFolder name="f5" displayName="osal" projectFiles="true">
-        <itemPath>../src/config/pic32mz_w1_curiosity_sw/osal/osal.h</itemPath>
-        <itemPath>../src/config/pic32mz_w1_curiosity_sw/osal/osal_definitions.h</itemPath>
-        <itemPath>../src/config/pic32mz_w1_curiosity_sw/osal/osal_impl_basic.h</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f4" displayName="packs" projectFiles="true">
-        <logicalFolder name="f1"
-                       displayName="PIC32MZ1025W104132_DFP"
-                       projectFiles="true">
-          <itemPath>../src/packs/PIC32MZ1025W104132_DFP/device.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfcrypt" projectFiles="true">
@@ -234,6 +228,13 @@
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="config" projectFiles="true">
+        <logicalFolder name="f1"
+                       displayName="pic32mz_w1_curiosity_sw"
+                       projectFiles="true">
+          <itemPath>../src/config/pic32mz_w1_curiosity_sw/p32MZ1025W104132.ld</itemPath>
+        </logicalFolder>
+      </logicalFolder>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -408,9 +409,12 @@
                    projectFiles="false">
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/evp.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mz_w1_curiosity_sw/harmony.prj</itemPath>
+      <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.xml</itemPath>
+      <itemPath>../src/config/pic32mz_w1_curiosity_sw/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -432,6 +436,8 @@
       <packs>
         <pack name="PIC32MZ-W_DFP" vendor="Microchip" version="1.2.153"/>
       </packs>
+      <ScriptingSettings>
+      </ScriptingSettings>
       <compileType>
         <linkerTool>
           <linkerLibItems>
@@ -465,7 +471,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib;../src;../src/config/pic32mz_w1_curiosity_sw;../src/packs/PIC32MZ1025W104132_DFP"/>
+                  value="../src;../src/config/pic32mz_w1_curiosity_sw;../src/packs/PIC32MZ1025W104132_DFP;../src/third_party/zlib;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -475,7 +481,7 @@
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros"
-                  value="HAVE_CONFIG_H;WOLFSSL_IGNORE_FILE_WARN"/>
+                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="toplevel-reordering" value=""/>
@@ -561,7 +567,8 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
-        <property key="extra-include-directories" value=""/>
+        <property key="extra-include-directories"
+                  value="../src;../src/config/pic32mz_w1_curiosity_sw;../src/packs/PIC32MZ1025W104132_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
