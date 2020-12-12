@@ -1,0 +1,79 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.crypto_apps_encrypt_decrypt_encrypt_decrypt_sam_rh71_ek",
+		"version": "3.6.1",
+		"displayName": "Encrypt/Decrypt Example for SAM RH71 Family",
+		"projectName": "sam_rh71_ek",
+		"shortDescription": "This demonstration exercises several cryptographic functions, including MD5, TDES, DES, AES, RSA, ECC, and Random Number Generation, to verify that the software or hardware is performing correctly.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "SAMRH71_DFP",
+			"semverRange": "^2.0.89"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAMRH71F20C",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM RH71 Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "Crypto", "ENCRYPT_DECRYPT"
+			],
+			[
+				"Middleware", "Crypto", "ENCRYPT_DECRYPT"
+			]
+		],
+		"peripherals": [
+			"Crypto"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"Crypto",
+			"ATSAMRH71F20C",
+			"SAM RH71 Family",
+			"Crypto",
+			"AES",
+			"DES",
+			"SHA",
+			"HMAC"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

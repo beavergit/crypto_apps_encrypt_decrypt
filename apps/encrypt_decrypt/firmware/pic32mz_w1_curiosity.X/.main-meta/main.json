@@ -1,0 +1,79 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.crypto_apps_encrypt_decrypt_encrypt_decrypt_pic32mz_w1_curiosity",
+		"version": "3.6.1",
+		"displayName": "Encrypt/Decrypt Example for PIC32MZ W1 Family",
+		"projectName": "pic32mz_w1_curiosity",
+		"shortDescription": "This demonstration exercises several cryptographic functions, including MD5, TDES, DES, AES, RSA, ECC, and Random Number Generation, to verify that the software or hardware is performing correctly.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "PIC32MZ-W_DFP",
+			"semverRange": "^1.2.153"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "PIC32MZ1025W104132",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "PIC32MZ W1 Curiosity Board"
+			],
+			[
+				"Harmony", "Middleware", "Crypto", "ENCRYPT_DECRYPT"
+			],
+			[
+				"Middleware", "Crypto", "ENCRYPT_DECRYPT"
+			]
+		],
+		"peripherals": [
+			"Crypto"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"Crypto",
+			"PIC32MZ1025W104132",
+			"PIC32MZ W1 Family",
+			"Crypto",
+			"AES",
+			"DES",
+			"SHA",
+			"HMAC"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}

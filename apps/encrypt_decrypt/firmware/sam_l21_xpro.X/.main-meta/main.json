@@ -1,0 +1,79 @@
+{
+	"metaDataVersion": "1.0.0",
+	"category": "com.microchip.ide.project",
+	"content": {
+		"metaDataVersion": "1.1.0",
+		"name": "com.microchip.mcu32.mplabx.project.crypto_apps_encrypt_decrypt_encrypt_decrypt_sam_l21_xpro",
+		"version": "3.6.1",
+		"displayName": "Encrypt/Decrypt Example for SAM L21/L22 Family",
+		"projectName": "sam_l21_xpro",
+		"shortDescription": "This demonstration exercises several cryptographic functions, including MD5, TDES, DES, AES, RSA, ECC, and Random Number Generation, to verify that the software or hardware is performing correctly.",
+		"ide": {
+			"name": "MPLABX",
+			"semverRange": ">=5.45.0"
+		},
+		"compiler": [
+			{
+				"name": "XC32",
+				"semverRange": ">=2.50.0"
+			}
+		],
+		"dfp": {
+			"name": "SAML21_DFP",
+			"semverRange": "^3.1.43"
+		},
+		"configurator": {
+			"name": "MHC",
+			"semverRange": ">=3.5.1"
+		},
+		"device": {
+			"metaDataVersion": "1.0.0",
+			"category": "com.microchip.portal.contentRef",
+			"content": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.device",
+				"name": "ATSAML21J18B",
+				"versionRange": "*"
+			}
+		},
+		"author": "Microchip",
+		"subcategories": [
+			[
+				"Development Kit", "SAM L21 Xplained Pro Evaluation Kit"
+			],
+			[
+				"Harmony", "Middleware", "Crypto", "ENCRYPT_DECRYPT"
+			],
+			[
+				"Middleware", "Crypto", "ENCRYPT_DECRYPT"
+			]
+		],
+		"peripherals": [
+			"Crypto"
+		],
+		"keywords": [
+			"MHC",
+			"Harmony",
+			"Middleware",
+			"Crypto",
+			"ATSAML21J18B",
+			"SAM L21/L22 Family",
+			"Crypto",
+			"AES",
+			"DES",
+			"SHA",
+			"HMAC"
+		],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./../../readme.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
+	}
+}
