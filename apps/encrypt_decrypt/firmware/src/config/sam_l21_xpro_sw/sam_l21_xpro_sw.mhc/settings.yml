@@ -1,0 +1,13 @@
+configName: sam_l21_xpro_sw
+folderName: ''
+format_version: v1.0
+frameworkPath: ../../../../../..
+processor: ATSAML21J18B
+projectName: ''
+settings:
+  PackageFilter: bsp;core;crypto;cryptoauthlib;cryptoauthlib_apps;crypto_apps_encrypt_decrypt;crypto_apps_large_hash;crypto_apps_speed_test;csp;net;net_apps_pic32mz;net_apps_sam_e5x;net_apps_sam_e70_v71;quick_docs;usb;wireless
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAML21_DFP\3.5.87\saml21b\atdf\ATSAML21J18B.atdf

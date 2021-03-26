@@ -8,10 +8,10 @@ nav_order: 99
 
 # Microchip MPLAB® Harmony 3 Release Notes
 
-## Encrypt/Decrypt Crypto Application Release v3.6.1
+## Encrypt/Decrypt Crypto Application Release v3.7.0
 
 ### New Features
-- Added discover.microchip.com metadata
+- No new features
 
 ### Bug fixes
 - Same as v3.6.0
@@ -49,7 +49,7 @@ The current known issues are as follows:
 
 ### Development Tools
 
-* [MPLAB® X IDE v5.40](https://www.microchip.com/mplab/mplab-x-ide)
-* [MPLAB® XC32 C/C++ Compiler v2.41](https://www.microchip.com/mplab/compilers)
+* [MPLAB® X IDE v5.45](https://www.microchip.com/mplab/mplab-x-ide)
+* [MPLAB® XC32 C/C++ Compiler v2.50](https://www.microchip.com/mplab/compilers)
 * MPLAB® X IDE plug-ins:
     * MPLAB® Harmony Configurator (MHC) v3.5.0 and above.

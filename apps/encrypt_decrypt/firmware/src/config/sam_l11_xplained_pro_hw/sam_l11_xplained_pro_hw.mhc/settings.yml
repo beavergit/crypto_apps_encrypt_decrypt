@@ -1,0 +1,13 @@
+configName: sam_l11_xplained_pro_hw
+folderName: ''
+format_version: v1.0
+frameworkPath: ../../..
+processor: ATSAML11E16A
+projectName: ''
+settings:
+  PackageFilter: bsp;core;crypto;cryptoauthlib;cryptoauthlib_apps;crypto_apps_encrypt_decrypt;crypto_apps_large_hash;crypto_apps_speed_test;csp;net;quick_docs;usb;wireless
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAML11_DFP\4.2.130\atdf\ATSAML11E16A.atdf

@@ -124,9 +124,12 @@ extern "C" {
 #define WOLF_CRYPTO_CB  // provide call-back support
 #define WOLFCRYPT_ONLY
 #define WOLFSSL_HAVE_MCHP_HW_CRYPTO
+// ---------- CRYPTO HARDWARE MANIFEST START ----------
 #define WOLFSSL_HAVE_MCHP_HW_CRYPTO_AES_HW_6149
 #define WOLFSSL_HAVE_MCHP_HW_CRYPTO_SHA_HW_11105
 #define WOLFSSL_HAVE_MCHP_HW_CRYPTO_TRNG_HW_6334
+// ---------- CRYPTO HARDWARE MANIFEST END ----------
+// ---------- FUNCTIONAL CONFIGURATION START ----------
 #define NO_MD4
 #define WOLFSSL_HAVE_MCHP_HW_SHA1
 #define WOLFSSL_SHA224
@@ -162,9 +165,11 @@ extern "C" {
 #define HAVE_HASHDRBG
 #define WC_NO_HARDEN
 #define SINGLE_THREADED
+#define NO_SIG_WRAPPER
 #define NO_ERROR_STRINGS
 #define NO_WOLFSSL_MEMORY
 #define HAVE_LIBZ
+// ---------- FUNCTIONAL CONFIGURATION END ----------
 
 
 

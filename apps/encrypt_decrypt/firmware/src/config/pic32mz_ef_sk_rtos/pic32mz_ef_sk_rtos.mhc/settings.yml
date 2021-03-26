@@ -1,0 +1,13 @@
+configName: pic32mz_ef_sk_rtos
+folderName: ''
+format_version: v1.0
+frameworkPath: ../../..
+processor: PIC32MZ2048EFM144
+projectName: ''
+settings:
+  PackageFilter: bsp;core;crypto;cryptoauthlib;cryptoauthlib_apps;crypto_apps_encrypt_decrypt;crypto_apps_large_hash;crypto_apps_speed_test;csp;net;net_apps_pic32mz;net_apps_sam_e5x;net_apps_sam_e70_v71;quick_docs;usb;wireless
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\PIC32MZ-EF_DFP\1.3.58\atdf\PIC32MZ2048EFM144.atdf

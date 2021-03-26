@@ -1,0 +1,13 @@
+configName: sam_e54_xplained_pro
+folderName: ''
+format_version: v1.0
+frameworkPath: ../../../../..
+processor: ATSAME54P20A
+projectName: ''
+settings:
+  PackageFilter: bsp;core;crypto;cryptoauthlib;cryptoauthlib_apps;crypto_apps_encrypt_decrypt;crypto_apps_large_hash;crypto_apps_speed_test;csp;net;net_apps_pic32mz;net_apps_sam_e5x;net_apps_sam_e70_v71;quick_docs;usb;wireless
+  FORCE_OPTIMIZATION: 'false'
+  GENERATE_BACKUP: 'true'
+  CMSISPath: .\dev_packs\arm\CMSIS\5.7.0
+  MERGE_STRATEGY: USER_ALL
+  DFPPath: .\dev_packs\Microchip\SAME54_DFP\3.5.87\atdf\ATSAME54P20A.atdf

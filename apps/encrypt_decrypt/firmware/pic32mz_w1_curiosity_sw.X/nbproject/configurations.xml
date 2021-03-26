@@ -72,6 +72,7 @@
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/device.h</itemPath>
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/user.h</itemPath>
           <itemPath>../src/config/pic32mz_w1_curiosity_sw/configuration.h</itemPath>
+          <itemPath>../src/config/pic32mz_w1_curiosity_sw/interrupts.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="wolfcrypt" projectFiles="true">
@@ -209,6 +210,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/sha512.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/wc_port.h</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/certs_test.h</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/rc2.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="zlib" projectFiles="true">
         <itemPath>../src/third_party/zlib/crc32.h</itemPath>
@@ -386,6 +388,7 @@
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha256.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/sha512.c</itemPath>
+        <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/rc2.c</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="zlib" projectFiles="true">
         <itemPath>../src/third_party/zlib/adler32.c</itemPath>
@@ -407,13 +410,29 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
+      <logicalFolder name="f2"
+                     displayName="pic32mz_w1_curiosity_sw.mhc"
+                     projectFiles="true">
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/BSP_PIC32MZ_W1_Curiosity.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/core.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/core_timer.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/drv_usart.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/lib_crypto.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/lib_wolfcrypt.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/lib_zlib.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/project.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.mhc/uart1.yml</itemPath>
+      </logicalFolder>
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/evp.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32mz_w1_curiosity_sw/harmony.prj</itemPath>
-      <itemPath>../src/config/pic32mz_w1_curiosity_sw/pic32mz_w1_curiosity_sw.xml</itemPath>
       <itemPath>../src/config/pic32mz_w1_curiosity_sw/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -430,11 +449,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>PKOBSKDEPlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MZ-W_DFP" vendor="Microchip" version="1.2.153"/>
+        <pack name="PIC32MZ-W_DFP" vendor="Microchip" version="1.4.193"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -455,6 +474,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -471,7 +491,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_w1_curiosity_sw;../src/packs/PIC32MZ1025W104132_DFP;../src/third_party/zlib;../src/third_party/wolfssl/wolfssl;../src/third_party/wolfssl"/>
+                  value="../src;../src/config/pic32mz_w1_curiosity_sw;../src/packs/PIC32MZ1025W104132_DFP;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -481,7 +501,7 @@
         <property key="post-instruction-scheduling" value="default"/>
         <property key="pre-instruction-scheduling" value="default"/>
         <property key="preprocessor-macros"
-                  value="WOLFSSL_IGNORE_FILE_WARN;HAVE_CONFIG_H"/>
+                  value="HAVE_CONFIG_H;WOLFSSL_IGNORE_FILE_WARN"/>
         <property key="strict-ansi" value="false"/>
         <property key="support-ansi" value="false"/>
         <property key="toplevel-reordering" value=""/>

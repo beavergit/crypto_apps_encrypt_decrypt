@@ -944,6 +944,7 @@ void random_test(void)
 
     hashStart = APP_getTicks();
     ret = CRYPT_RNG_Initialize(&rng);
+    
     if (ret == 0) 
     {
         ret = CRYPT_RNG_BlockGenerate(&rng, block, sizeof(block));   
