@@ -468,13 +468,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B68410FA195BDE150AF71287FE63656A
-- generatedChecksum: 976D1ECEB8EE04ACBE827B055A753DFF
+- generatedChecksum: 98EC73527ACE22CB9C6245495DFE4CB0
   logicalPath: config\pic32mz_ef_sk_sw
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 976D1ECEB8EE04ACBE827B055A753DFF
+  userChecksum: 98EC73527ACE22CB9C6245495DFE4CB0
 - generatedChecksum: BBFE78F36AAE0A640685DAEF8063F0EB
   logicalPath: wolfcrypt
   name: integer.c

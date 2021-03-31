@@ -444,7 +444,7 @@ children:
     - type: Values
       children:
       - type: User
-        attributes: {value: ICS_PGx1}
+        attributes: {value: ICS_PGx2}
   - type: Combo
     attributes: {id: CONFIG_JTAGEN}
     children:
