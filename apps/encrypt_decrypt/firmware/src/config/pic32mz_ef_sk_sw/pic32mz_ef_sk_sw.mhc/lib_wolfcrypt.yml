@@ -5,6 +5,13 @@ children:
 - type: Symbols
   children:
   - type: Boolean
+    attributes: {id: cryptoCrya_03710}
+    children:
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_wolfcrypt, value: 'false'}
+  - type: Boolean
     attributes: {id: cryptoCrya_U2803}
     children:
     - type: Values
@@ -18,15 +25,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: lib_wolfcrypt, value: 'false'}
-  - type: Boolean
-    attributes: {id: wolfcrypt_hashdrng}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: wolfcrypt_havezlib}
     children:
@@ -45,6 +43,28 @@ children:
         - {type: Value, value: 'true'}
   - type: Boolean
     attributes: {id: wolfcrypt_hmac}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: visible}
+        children:
+        - {type: Value, value: 'true'}
+  - type: Boolean
+    attributes: {id: wolfcrypt_random}
+    children:
+    - type: Attributes
+      children:
+      - type: Boolean
+        attributes: {id: readOnly}
+        children:
+        - {type: Value, value: 'false'}
+    - type: Values
+      children:
+      - type: Dynamic
+        attributes: {id: lib_wolfcrypt, value: 'true'}
+  - type: Boolean
+    attributes: {id: wolfcrypt_randomtest}
     children:
     - type: Attributes
       children:
@@ -82,15 +102,6 @@ children:
       children:
       - type: User
         attributes: {value: 'true'}
-  - type: Boolean
-    attributes: {id: wolfcrypt_supportcompression}
-    children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: visible}
-        children:
-        - {type: Value, value: 'true'}
 - type: Attachments
   children:
   - type: DirectDependency

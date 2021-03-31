@@ -13,13 +13,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 5E51A9876A3A64898D50A6B99841A8FD
-- generatedChecksum: ''
+- generatedChecksum: null
   logicalPath: ''
   name: app.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: ''
+  userChecksum: null
 - generatedChecksum: 928C0B9FF116D4D3994879848B3D46F8
   logicalPath: wolfcrypt
   name: arc4.c
@@ -475,13 +475,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B68410FA195BDE150AF71287FE63656A
-- generatedChecksum: 77CC0DC673C793C452042F3AE338ED58
+- generatedChecksum: F6FF4B0C009C8677A97938FE52331063
   logicalPath: config\pic32mz_ef_sk_sw
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 77CC0DC673C793C452042F3AE338ED58
+  userChecksum: F6FF4B0C009C8677A97938FE52331063
 - generatedChecksum: BBFE78F36AAE0A640685DAEF8063F0EB
   logicalPath: wolfcrypt
   name: integer.c
@@ -503,13 +503,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 30DB1E88C1200D259CF6E08B228FE3D7
-- generatedChecksum: ''
+- generatedChecksum: null
   logicalPath: ''
   name: main.c
   physicalPath: ..\..
   security: NON_SECURE
   type: SOURCE
-  userChecksum: ''
+  userChecksum: null
 - generatedChecksum: 862D8D08452AA2686491E461C4741C4C
   logicalPath: wolfcrypt
   name: md2.c
@@ -538,13 +538,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 880750FA04E2E5EC0FC4B8306804D440
-- generatedChecksum: 257FD8DA385CB8BD2ECBD68395BB7D76
+- generatedChecksum: 251FC22A8A3373859C11B253505E43E9
   logicalPath: wolfcrypt\port
   name: pic32mz-crypt.c
   physicalPath: ..\..\third_party\wolfssl\wolfssl\wolfcrypt\src\port\pic32
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 257FD8DA385CB8BD2ECBD68395BB7D76
+  userChecksum: 251FC22A8A3373859C11B253505E43E9
 - generatedChecksum: 9DE4FBC792E1AA5D39469B07CB97078A
   logicalPath: wolfcrypt
   name: pkcs12.c
@@ -1112,13 +1112,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: BB24E129AA5617E2D53C193FC74D53FA
-- generatedChecksum: ''
+- generatedChecksum: null
   logicalPath: ''
   name: app.h
   physicalPath: ..\..
   security: NON_SECURE
   type: HEADER
-  userChecksum: ''
+  userChecksum: null
 - generatedChecksum: F18EBACF5A587D5E164EFFDFADEC07AE
   logicalPath: wolfcrypt
   name: arc4.h
@@ -1217,20 +1217,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 15DEBB2EC16A09EEBA246255FF73792D
-- generatedChecksum: BBE2AB9763E7BB36934A49D9681301A3
+- generatedChecksum: 15AB6693CC2E1EE7AB845EE42A6AC762
   logicalPath: config\pic32mz_ef_sk_sw
   name: config.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: BBE2AB9763E7BB36934A49D9681301A3
-- generatedChecksum: 4089B3AD15EC5211AA1CBEFAC0CC1F73
+  userChecksum: 15AB6693CC2E1EE7AB845EE42A6AC762
+- generatedChecksum: 0C936E50BEFB0591A9E16A3731592E73
   logicalPath: config\pic32mz_ef_sk_sw
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4089B3AD15EC5211AA1CBEFAC0CC1F73
+  userChecksum: 0C936E50BEFB0591A9E16A3731592E73
 - generatedChecksum: E2213F8AC22EC0D94CED6269EA154195
   logicalPath: wolfcrypt
   name: cpuid.h
@@ -2008,13 +2008,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: A88EDFD8A42506D1447BBF34DB7F8126
-- generatedChecksum: ''
+- generatedChecksum: null
   logicalPath: config\pic32mz_ef_sk_sw
   name: user.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: ''
+  userChecksum: null
 - generatedChecksum: 3144F84B824DCBB3D2DDFD94665867BD
   logicalPath: wolfcrypt
   name: visibility.h

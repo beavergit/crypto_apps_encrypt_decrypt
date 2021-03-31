@@ -400,13 +400,27 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
+      <logicalFolder name="f2" displayName="pic32mz_ef_sk_sw.mhc" projectFiles="true">
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/BSP_PIC32MZ_EF_Starter_Kit.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/core.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/core_timer.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/drv_usart.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/HarmonyCore.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/lib_crypto.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/lib_wolfcrypt.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/lib_zlib.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/project.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/uart2.yml</itemPath>
+      </logicalFolder>
       <logicalFolder name="f1" displayName="wolfcrypt" projectFiles="true">
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/misc.c</itemPath>
         <itemPath>../src/third_party/wolfssl/wolfssl/wolfcrypt/src/evp.c</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/pic32mz_ef_sk_sw/harmony.prj</itemPath>
-      <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.xml</itemPath>
       <itemPath>../src/config/pic32mz_ef_sk_sw/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -423,7 +437,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>ICD4Tool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
