@@ -55,13 +55,6 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 384C6DECA8EB7487E7C91C2FB0780F72
-- generatedChecksum: 64D0F9C57F1452BD074A574237B811D7
-  logicalPath: config\pic32mz_ef_sk_sw\bsp
-  name: bsp.c
-  physicalPath: bsp
-  security: NON_SECURE
-  type: SOURCE
-  userChecksum: 64D0F9C57F1452BD074A574237B811D7
 - generatedChecksum: DC58FA7C1211063D58ED28BA66D8297D
   logicalPath: wolfcrypt
   name: camellia.c
@@ -475,13 +468,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B68410FA195BDE150AF71287FE63656A
-- generatedChecksum: F6FF4B0C009C8677A97938FE52331063
+- generatedChecksum: 976D1ECEB8EE04ACBE827B055A753DFF
   logicalPath: config\pic32mz_ef_sk_sw
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: F6FF4B0C009C8677A97938FE52331063
+  userChecksum: 976D1ECEB8EE04ACBE827B055A753DFF
 - generatedChecksum: BBFE78F36AAE0A640685DAEF8063F0EB
   logicalPath: wolfcrypt
   name: integer.c
@@ -580,13 +573,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 179D318E359BB75728F5289DFF609915
-- generatedChecksum: 085AD21E69A015135F99F9AE4E244A69
+- generatedChecksum: 0FA69C29C1D11839DE0E442622DC5136
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\gpio
   name: plib_gpio.c
   physicalPath: peripheral\gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 085AD21E69A015135F99F9AE4E244A69
+  userChecksum: 0FA69C29C1D11839DE0E442622DC5136
 - generatedChecksum: EB7F9D0D9C47DDC4153CFBBEBEE20800
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\uart
   name: plib_uart2.c
@@ -1161,13 +1154,6 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: B860C8C34BACFC5CFE758AD647074C94
-- generatedChecksum: A9C595E0E5A92D2B85C18D2A27597B84
-  logicalPath: config\pic32mz_ef_sk_sw\bsp
-  name: bsp.h
-  physicalPath: bsp
-  security: NON_SECURE
-  type: HEADER
-  userChecksum: A9C595E0E5A92D2B85C18D2A27597B84
 - generatedChecksum: 6A2D8077684062A5B8364D9A2A34AA9D
   logicalPath: wolfcrypt
   name: camellia.h
@@ -1434,13 +1420,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9C03157AED4C1852AA0A6C55C4400D8E
-- generatedChecksum: 9BF6E78CE0E2795D991079E5DB4F5360
+- generatedChecksum: 49F4ED726D93B69196C5DBB20FEBE45C
   logicalPath: config\pic32mz_ef_sk_sw
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 9BF6E78CE0E2795D991079E5DB4F5360
+  userChecksum: 49F4ED726D93B69196C5DBB20FEBE45C
 - generatedChecksum: B99354C34DA476BAE8670DEEEE3A61D2
   logicalPath: zlib
   name: deflate.h
@@ -1763,20 +1749,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 49EF1C56EBDEE25C8E46F029F020AB21
-- generatedChecksum: B38028A617FDD4D90B80660771629645
+- generatedChecksum: AC5DD3DAA18C2111288938F71CC73E0A
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\evic
   name: plib_evic.h
   physicalPath: peripheral\evic
   security: NON_SECURE
   type: HEADER
-  userChecksum: B38028A617FDD4D90B80660771629645
-- generatedChecksum: 7C81E209FCA84F84DF22D0E71E3BCE66
+  userChecksum: AC5DD3DAA18C2111288938F71CC73E0A
+- generatedChecksum: 16059002C7B4F7DCE4088B9D86AE04A9
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\gpio
   name: plib_gpio.h
   physicalPath: peripheral\gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7C81E209FCA84F84DF22D0E71E3BCE66
+  userChecksum: 16059002C7B4F7DCE4088B9D86AE04A9
 - generatedChecksum: 683875C868FFF7D7455562B681FDC588
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\uart
   name: plib_uart2.h
@@ -2078,13 +2064,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 101D7D726AC61A8109F5B453AB9B9B93
-- generatedChecksum: 9175BBED360A1F5665567266A2A2A4FA
+- generatedChecksum: 54855974378B7873477F0FF5F6B181BF
   logicalPath: config\pic32mz_ef_sk_sw
-  name: p32MZ2048EFM144.ld
+  name: p32MZ2048EFG100.ld
   physicalPath: ''
   security: NON_SECURE
   type: LINKER
-  userChecksum: 9175BBED360A1F5665567266A2A2A4FA
+  userChecksum: 54855974378B7873477F0FF5F6B181BF
 - generatedChecksum: CEEB83B7AFD79E62A3DDAB7902EFE734
   logicalPath: wolfcrypt
   name: evp.c
@@ -2125,7 +2111,7 @@ settings:
   delimiter: ;
   key: extra-include-directories
   security: NON_SECURE
-  value: ../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFM144_DFP;
+  value: ../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFG100_DFP;
 - append: false
   category: C32
   delimiter: ''
@@ -2167,7 +2153,7 @@ settings:
   delimiter: ;
   key: extra-include-directories
   security: NON_SECURE
-  value: ../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFM144_DFP;
+  value: ../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFG100_DFP;
 - append: false
   category: C32CPP
   delimiter: ''

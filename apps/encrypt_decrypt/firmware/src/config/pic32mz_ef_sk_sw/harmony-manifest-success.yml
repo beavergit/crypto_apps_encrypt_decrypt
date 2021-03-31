@@ -4,7 +4,7 @@
 
 
 project: encrypt_decrypt
-creation_date: 2021-03-31T14:44:29.239-04:00[America/New_York]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2021-03-31T15:03:29.197-04:00[America/New_York]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mhc_mode: IDE            # [IDE|Standalone|Headless]
 mhc_version: v3.7.1
@@ -18,6 +18,5 @@ modules:
     - {name: "zlib", version: "v1.2.11"}
     - {name: "dev_packs", version: "v3.8.0"}
     - {name: "wolfssl", version: "v4.5.0"}
-    - {name: "bsp", version: "v3.8.0"}
     - {name: "crypto", version: "v3.6.3"}
 

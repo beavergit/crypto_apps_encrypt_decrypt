@@ -2,7 +2,7 @@ configName: pic32mz_ef_sk_sw
 folderName: ''
 format_version: v1.0
 frameworkPath: ../../..
-processor: PIC32MZ2048EFM144
+processor: PIC32MZ2048EFG100
 projectName: ''
 settings:
   PackageFilter: bootloader;bootloader_apps_uart;bsp;core;core_apps_pic32mz_ef;crypto;cryptoauthlib;cryptoauthlib_apps;crypto_apps_encrypt_decrypt;csp;csp_apps_pic32mz_ef;net;quick_docs;usb
