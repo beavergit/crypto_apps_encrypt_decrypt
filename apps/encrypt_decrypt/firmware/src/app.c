@@ -2818,9 +2818,9 @@ void APP_Tasks(void) {
             /* Show Hyperterminal is working using available output functions */
             // SYS_MESSAGE("SYS_MESSAGE:" "\r\n Application created " __DATE__ " " __TIME__ " initialized!\r\n");            
             // SYS_DEBUG(SYS_ERROR_INFO,"SYS_DEBUG:" "\r\n Application created " __DATE__ " " __TIME__ " initialized!\r\n");
-            appData.usartHandle = DRV_USART_Open(DRV_USART_INDEX_0, DRV_IO_INTENT_READWRITE);
-            DRV_USART_WriteBuffer( appData.usartHandle, 
-                                    (void*)msgBuffer, strlen(msgBuffer));
+//            appData.usartHandle = DRV_USART_Open(DRV_USART_INDEX_0, DRV_IO_INTENT_READWRITE);
+//            DRV_USART_WriteBuffer( appData.usartHandle, 
+//                                    (void*)msgBuffer, strlen(msgBuffer));
             appData.state = APP_STATE_TEST_MD5;
             break;
         }
@@ -3187,6 +3187,7 @@ void APP_Tasks(void) {
                 sprintf(printBuffer, "%s\n\rOne or more tests FAILED\n\r", printBuffer);
             } else {
                 sprintf(printBuffer, "%s\n\rAll tests passed\n\r", printBuffer);
+                //LATBbits.LATB14 = 1;
             }
             DRV_USART_WriteBuffer( appData.usartHandle, printBuffer, strlen(printBuffer));
             appData.state = APP_SPIN;

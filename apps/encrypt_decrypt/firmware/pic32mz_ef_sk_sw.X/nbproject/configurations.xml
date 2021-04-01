@@ -6,9 +6,6 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_ef_sk_sw" projectFiles="true">
-          <logicalFolder name="f3" displayName="bsp" projectFiles="true">
-            <itemPath>../src/config/pic32mz_ef_sk_sw/bsp/bsp.h</itemPath>
-          </logicalFolder>
           <logicalFolder name="f4" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/pic32mz_ef_sk_sw/crypto/crypto.h</itemPath>
           </logicalFolder>
@@ -230,7 +227,7 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_ef_sk_sw" projectFiles="true">
-          <itemPath>../src/config/pic32mz_ef_sk_sw/p32MZ2048EFM144.ld</itemPath>
+          <itemPath>../src/config/pic32mz_ef_sk_sw/p32MZ2048EFG100.ld</itemPath>
         </logicalFolder>
       </logicalFolder>
     </logicalFolder>
@@ -239,9 +236,6 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_ef_sk_sw" projectFiles="true">
-          <logicalFolder name="f4" displayName="bsp" projectFiles="true">
-            <itemPath>../src/config/pic32mz_ef_sk_sw/bsp/bsp.c</itemPath>
-          </logicalFolder>
           <logicalFolder name="f5" displayName="crypto" projectFiles="true">
             <itemPath>../src/config/pic32mz_ef_sk_sw/crypto/src/crypto.c</itemPath>
           </logicalFolder>
@@ -404,7 +398,6 @@
                    displayName="Important Files"
                    projectFiles="false">
       <logicalFolder name="f2" displayName="pic32mz_ef_sk_sw.mhc" projectFiles="true">
-        <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/BSP_PIC32MZ_EF_Starter_Kit.yml</itemPath>
         <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/core.yml</itemPath>
         <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/core_timer.yml</itemPath>
         <itemPath>../src/config/pic32mz_ef_sk_sw/pic32mz_ef_sk_sw.mhc/dfp.yml</itemPath>
@@ -435,16 +428,16 @@
     <conf name="pic32mz_ef_sk_sw" type="2">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
-        <targetDevice>PIC32MZ2048EFM144</targetDevice>
+        <targetDevice>PIC32MZ2048EFG100</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>PKOBSKDEPlatformTool</platformTool>
+        <platformTool>ICD3PlatformTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MZ-EF_DFP" vendor="Microchip" version="1.1.45"/>
+        <pack name="PIC32MZ-EF_DFP" vendor="Microchip" version="1.2.51"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -482,7 +475,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFM144_DFP;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib"/>
+                  value="../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFG100_DFP;../src/third_party/wolfssl;../src/third_party/wolfssl/wolfssl;../src/third_party/zlib"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -579,7 +572,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFM144_DFP"/>
+                  value="../src;../src/config/pic32mz_ef_sk_sw;../src/packs/PIC32MZ2048EFG100_DFP"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -604,10 +597,14 @@
         <property key="mdtcm" value=""/>
         <property key="mitcm" value=""/>
         <property key="mstacktcm" value="false"/>
+        <property key="omit-pack-options" value="1"/>
         <property key="relaxed-math" value="false"/>
         <property key="save-temps" value="false"/>
         <property key="wpo-lto" value="false"/>
       </C32Global>
+      <ICD3PlatformTool>
+        <property key="firmware.download.all" value="false"/>
+      </ICD3PlatformTool>
       <ICD4Tool>
         <property key="ADC" value="true"/>
         <property key="AutoSelectMemRanges" value="auto"/>
