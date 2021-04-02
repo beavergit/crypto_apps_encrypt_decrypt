@@ -573,13 +573,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: D58505CBC0B221592C55E99AF3A36D77
-- generatedChecksum: 08D27F5F8DB38FC5C65B9407E41D4AB1
+- generatedChecksum: 5D5333105427084E9EF12042F8A577E2
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\gpio
   name: plib_gpio.c
   physicalPath: peripheral\gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 08D27F5F8DB38FC5C65B9407E41D4AB1
+  userChecksum: 5D5333105427084E9EF12042F8A577E2
 - generatedChecksum: E929AA29555EDA747F11829EBDB1F8A6
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\uart
   name: plib_uart2.c
@@ -1770,13 +1770,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 7B61050B5EB82A06885FB0219A1A9CA6
-- generatedChecksum: 506B458EA10BF024B3DFFBB03BC4062D
+- generatedChecksum: EAB38012747DE7139D1738DE13FA60C0
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\gpio
   name: plib_gpio.h
   physicalPath: peripheral\gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: 506B458EA10BF024B3DFFBB03BC4062D
+  userChecksum: EAB38012747DE7139D1738DE13FA60C0
 - generatedChecksum: ED74899E8093FE270EE378ABAE2DFBCB
   logicalPath: config\pic32mz_ef_sk_sw\peripheral\uart
   name: plib_uart2.h

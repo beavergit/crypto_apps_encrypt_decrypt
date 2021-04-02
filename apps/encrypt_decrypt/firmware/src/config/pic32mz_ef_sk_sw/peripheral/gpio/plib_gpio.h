@@ -62,14 +62,14 @@
 // *****************************************************************************
 
 
-/*** Macros for GPIO_RB14 pin ***/
-#define GPIO_RB14_Set()               (LATBSET = (1<<14))
-#define GPIO_RB14_Clear()             (LATBCLR = (1<<14))
-#define GPIO_RB14_Toggle()            (LATBINV= (1<<14))
-#define GPIO_RB14_OutputEnable()      (TRISBCLR = (1<<14))
-#define GPIO_RB14_InputEnable()       (TRISBSET = (1<<14))
-#define GPIO_RB14_Get()               ((PORTB >> 14) & 0x1)
-#define GPIO_RB14_PIN                  GPIO_PIN_RB14
+/*** Macros for GPIO_RB13 pin ***/
+#define GPIO_RB13_Set()               (LATBSET = (1<<13))
+#define GPIO_RB13_Clear()             (LATBCLR = (1<<13))
+#define GPIO_RB13_Toggle()            (LATBINV= (1<<13))
+#define GPIO_RB13_OutputEnable()      (TRISBCLR = (1<<13))
+#define GPIO_RB13_InputEnable()       (TRISBSET = (1<<13))
+#define GPIO_RB13_Get()               ((PORTB >> 13) & 0x1)
+#define GPIO_RB13_PIN                  GPIO_PIN_RB13
 
 
 // *****************************************************************************

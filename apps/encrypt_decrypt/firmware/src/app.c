@@ -628,9 +628,14 @@ void hmac_sha_test(void)
 #if !defined(NO_HMAC) && !defined(NO_SHA256)
 void hmac_sha256_test(void)
 {
-    Hmac hmac;
-    uint8_t hash[SHA256_DIGEST_SIZE];
+    Hmac hmac;  //cz: mac stands for Message Authentication Code
+    uint8_t hash[SHA256_DIGEST_SIZE];   //hash output size is 32 bytes
 
+    //cz: 3 separate keys for 3 separate phrases to be tested.
+    // Each key can be any size, e.g., the 1st and 3rd are 20 bytes each, and 2nd is 4 bytes
+    // syntax: this is how you initialize an array of 3 separate string.
+    // To view the memory, you have to see the Execution memory, since it is 
+    // defined as const.
     const char* keys[]=
     {
         "\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b\x0b"
@@ -678,6 +683,7 @@ void hmac_sha256_test(void)
     appData.hmac_sha256_test_result = times;
     
     hashStart = APP_getTicks();
+    //cz: hash 3 separate phrases, each separately, and compare the result to the expected result.
     for (i = 0; i < times; ++i) {
         wc_HmacSetKey(&hmac, SHA256, (uint8_t*)keys[i], (word32)strlen(keys[i]));
         wc_HmacUpdate(&hmac, (uint8_t*)test_hmac[i].input,
@@ -685,7 +691,7 @@ void hmac_sha256_test(void)
         wc_HmacFinal(&hmac, hash);
 
         if (memcmp(hash, test_hmac[i].output, SHA256_DIGEST_SIZE) == 0)
-            appData.hmac_sha256_test_result--;
+            appData.hmac_sha256_test_result--;  //cz: if all 3 tests passes, then this counter will be zero, which means all success!
     }
     hashStop = APP_getTicks();
     appData.hmac_sha256_timing = hashStop - hashStart;
@@ -1155,6 +1161,19 @@ static int aesgcm_default_test_helper(const uint8_t* key, int keySz, const uint8
  * https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/CAVP-TESTING-BLOCK-CIPHER-MODES*/
 int aesgcm_default_test(void)
 {
+    //cz: this is default tests that must be run to verify microchip's implementation of aesgcm is correct as specified by 
+    // the above link (NIST).
+    //   GCM is a block cipher mode of operation providing both
+    //   confidentiality and data origin authentication.  The GCM
+    //   authenticated encryption operation has four inputs: a secret key, an
+    //   initialization vector (IV), a plaintext, and an input for additional
+    //   authenticated data (AAD).  It has two outputs, a ciphertext whose
+    //   length is identical to the plaintext, and an authentication tag.  In
+    //   the following, we describe how the IV, plaintext, and AAD are formed
+    //   from the ESP fields, and how the ESP packet is formed from the
+    //   ciphertext and authentication tag.
+    
+    //input
      uint8_t key1[] = {
         0x29, 0x8e, 0xfa, 0x1c, 0xcf, 0x29, 0xcf, 0x62,
         0xae, 0x68, 0x24, 0xbf, 0xc1, 0x95, 0x57, 0xfc
@@ -1177,6 +1196,7 @@ int aesgcm_default_test(void)
         0xff, 0xe8, 0x02, 0x56, 0xe5, 0xb1, 0xc6, 0xb1
     };
 
+     //output
      uint8_t cipher1[] = {
         0xdf, 0xce, 0x4e, 0x9c, 0xd2, 0x91, 0x10, 0x3d,
         0x7f, 0xe4, 0xe6, 0x33, 0x51, 0xd9, 0xe7, 0x9d,
@@ -2933,12 +2953,12 @@ void APP_Tasks(void) {
         case APP_STATE_TEST_AES:
 #ifndef NO_AES
             testCount++;
-            aes_test();
+            aes_test(); //cz: AES-CBC
 #endif
             appData.state = APP_STATE_TEST_AES_GCM;
             break;
 
-        case APP_STATE_TEST_AES_GCM:
+        case APP_STATE_TEST_AES_GCM:  //cz: based on my read, AES-GCM is more secure than AES-CBC, I am going to use AES-GCM
 #ifdef HAVE_AESGCM
             testCount++;
             aesgcm_default_test();
@@ -3187,7 +3207,8 @@ void APP_Tasks(void) {
                 sprintf(printBuffer, "%s\n\rOne or more tests FAILED\n\r", printBuffer);
             } else {
                 sprintf(printBuffer, "%s\n\rAll tests passed\n\r", printBuffer);
-                //LATBbits.LATB14 = 1;
+                LATB = 0x0000;
+
             }
             DRV_USART_WriteBuffer( appData.usartHandle, printBuffer, strlen(printBuffer));
             appData.state = APP_SPIN;
